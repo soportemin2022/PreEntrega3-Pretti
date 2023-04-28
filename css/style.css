@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Alkatra, serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #cae7ea;
 }
 
 h1 {
@@ -15,22 +15,21 @@ h1 {
 
 a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: black;
+}
+
+header {
+    text-align: center;
 }
 
 .banner {
-    background-image: url(../Images/66205.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #00aec3;
     height: 150px;
-    margin: 1px auto 1px;
-    text-align: center;
+    position: fixed;
     width: 100%;
+    right: 0;
 }
 
-.banner h1 {
-    text-align: center;
-}
 
 .main_container {
     display: inline;
@@ -65,12 +64,23 @@ figure {
 }
 
 footer {
-    width: 100%;
-    bottom: 0;
+    height: auto;
     position: fixed;
+    bottom: 0;
     text-align: center;
-    background-color: rgb(142, 231, 202);
-    
+    background-color: #00aec3;
+    width: 100%;
+    right: 0;
+    /* left: 0; */
+    font-size: 16px;
+}
+
+i {
+    padding-right: 16px;
+}
+
+.derechos {
+    display: inline;
 }
 
 /* servicios */
@@ -84,8 +94,8 @@ footer {
     /* border: 2.5px solid green; */
     width: 75%;
     border: 1px solid black;
-    float: right;  
-    margin: 5% 5%  
+    float: right;
+    margin: 5% 5%
 }
 
 .ventana {
@@ -98,7 +108,7 @@ footer {
 
 /* organigrama */
 
-.contenedor_organigrama{
+.contenedor_organigrama {
     text-align: center;
 }
 
