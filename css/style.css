@@ -15,7 +15,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: black;
 }
 
 header {
@@ -25,7 +25,9 @@ header {
 .banner {
     background-color: #00aec3;
     height: 150px;
-
+    position: fixed;
+    width: 100%;
+    right: 0;
 }
 
 
@@ -62,12 +64,23 @@ figure {
 }
 
 footer {
-    width: 100%;
-    bottom: 0;
+    height: auto;
     position: fixed;
+    bottom: 0;
     text-align: center;
-    background-color: rgb(142, 231, 202);
+    background-color: #00aec3;
+    width: 100%;
+    right: 0;
+    /* left: 0; */
+    font-size: 16px;
+}
 
+i {
+    padding-right: 16px;
+}
+
+.derechos {
+    display: inline;
 }
 
 /* servicios */
