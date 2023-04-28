@@ -1,2 +1,2 @@
 # proyecto_intranet
-este texto lo agregamos
+url: https://soportemin2022.github.io/proyecto_intranet/
