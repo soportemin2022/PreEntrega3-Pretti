@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Alkatra, serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.banner {
+    background-image: url(../Images/66205.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    margin: 1px auto 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.banner h1 {
+    text-align: center;
+}
+
+.main_container {
+    display: inline;
+    margin: 10px;
+}
+
+nav {
+    float: left;
+    margin-right: 50px;
+    margin-left: 25px;
+    padding: 15px;
+
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+.display_NewsGral {
+    height: 100px;
+}
+
+.display_categories {
+    text-align: center;
+}
+
+
+
+figure {
+    display: block;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(142, 231, 202);
+}
+
+/* servicios */
+
+
+/* avisos */
+
+/* contenedores gral */
+
+.contenedor_ventanas {
+    /* border: 2.5px solid green; */
+    width: 75%;
+    border: 1px solid black;
+    float: right;  
+    margin: 5% 5%  
+}
+
+.ventana {
+    /* border: 2.5px solid red; */
+    width: 50%;
+    margin: 5% 25%;
+    border: 1px solid black;
+}
+
+
+/* organigrama */
+
+.contenedor_organigrama{
+    text-align: center;
+}
+
+
+/* formulario */
+
+.form_contacto {
+    width: 30%;
+}
