@@ -7,6 +7,9 @@
 
 body {
     background-color: #cae7ea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 h1 {
@@ -20,6 +23,10 @@ a {
 
 header {
     text-align: center;
+    display: grid;
+    grid-column: 4/4;
+    grid-row: 1/4;
+
 }
 
 .banner {
@@ -31,26 +38,40 @@ header {
 }
 
 
+main{
+    
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 4/4;
+}
+
+
 .main_container {
-    display: inline;
-    margin: 10px;
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/4;
 }
 
-nav {
-    float: left;
-    margin-right: 50px;
-    margin-left: 25px;
-    padding: 15px;
 
+nav{
+    height: 100%;
+    background-color: red;
 }
 
-li {
-    margin: 10px;
-    list-style: none;
-}
+
 
 .display_NewsGral {
-    height: 100px;
+    
+    border: 1px solid black;
+    margin: 5% 5%;
+   padding: 2%;
+
+    width: 70%; /* 70% del ancho disponible */
+    margin-left: 300px; /* ancho del sidebar */
 }
 
 .display_categories {
@@ -117,4 +138,58 @@ i {
 
 .form_contacto {
     width: 30%;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+    font-size: 3.5rem;
+}
+}
+
+.b-example-divider {
+width: 100%;
+height: 3rem;
+background-color: rgba(0, 0, 0, .1);
+border: solid rgba(0, 0, 0, .15);
+border-width: 1px 0;
+box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+flex-shrink: 0;
+width: 1.5rem;
+height: 100vh;
+}
+
+.bi {
+vertical-align: -.125em;
+fill: currentColor;
+}
+
+
+.btn-bd-primary {
+--bd-violet-bg: #712cf9;
+--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+--bs-btn-font-weight: 600;
+--bs-btn-color: var(--bs-white);
+--bs-btn-bg: var(--bd-violet-bg);
+--bs-btn-border-color: var(--bd-violet-bg);
+--bs-btn-hover-color: var(--bs-white);
+--bs-btn-hover-bg: #6528e0;
+--bs-btn-hover-border-color: #6528e0;
+--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+--bs-btn-active-color: var(--bs-btn-hover-color);
+--bs-btn-active-bg: #5a23c8;
+--bs-btn-active-border-color: #5a23c8;
+}
+.bd-mode-toggle {
+z-index: 1500;
 }
