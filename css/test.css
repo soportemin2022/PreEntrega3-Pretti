@@ -41,7 +41,7 @@ main{
     
     height: auto;
     width: 100%;
-    
+    display: grid;
     grid-column: 1/4;
     grid-row: 4/4;
 }
@@ -72,7 +72,7 @@ nav{
     margin: 5% 5%;
     padding: 2%;
 
-    width: 80%; /* 70% del ancho disponible */
+    width: auto; /* 70% del ancho disponible */
     margin-left: 200px; /* ancho del sidebar */
 }
 
