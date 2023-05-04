@@ -5,194 +5,201 @@
     font-family: 'Encode Sans', sans-serif;
 }
 
-body {
-    background-color: #cae7ea;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
+body {
+    background-color: #cae7ea;
+    /* margin-top: 150px; */
+}
+
+
 header {
     text-align: center;
-    grid-column: 4/4;
-    grid-row: 1/4;
-
-}
-
-.banner {
     background-color: #00aec3;
     height: 150px;
-    position: fixed;
     width: 100%;
-    right: 0;
+    /* position: fixed; */
+    padding-top: 30px;
+    top: 0;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 }
 
-
-main{
-    
-    height: auto;
-    width: 100%;
-    
-    grid-column: 1/4;
-    grid-row: 4/4;
+.nav {
+    font-size: 2rem;
+    align-content: center !important;
+    padding-top: 30px;
 }
 
-
-.main_container {
-    width: 100%;
-    min-height: 500px;
-    display: grid;
-    grid-column: 2/4;
-    grid-row: 1/4;
+.nav-link {
+    color: black !important;
 }
 
+.nav-link:hover {
+    color: white !important;
+}
 
-nav{
+.nav-item {
+    padding: 25px;
+}
+
+.row {
+    /* box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8); */
+    height: 100vh;
+}
+
+.cuerpo-nav {
+    /* height: 100%; */
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.cuerpo-main {
+    /* height: 100vh; */
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Organigrama */
+
+figure img {
+    width: 100%;
     height: 100%;
-    position: fixed;
-    margin-left: 0;
-    width: auto;
-    margin-top: 0;
 }
 
+/* Grid thig */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 15px;
+    min-height: 500px;
+}
 
-.display_NewsGral {
-    
+.grid-item1 {
+    grid-column: 1 / -1;
+}
+
+.item {
+    font-size: 1.5rem;
     border: 1px solid black;
-    margin: 5% 5%;
-    padding: 2%;
-
-    width: 80%; /* 70% del ancho disponible */
-    margin-left: 200px; /* ancho del sidebar */
+    padding: 15px;
 }
 
-.display_categories {
-    text-align: center;
-    
+/* form con FLEX */
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b0c36b;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* width: 90%; */
+    min-width: 50%;
+    min-height: 75%;
+}
 
+.contact-form label {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: black;
+    /* text-shadow: 2px 2px 3px black; */
+}
 
-figure {
-    display: block;
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.contact-form button[type="submit"] {
+    background-color: #00aec3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #9fc6c9;
 }
 
 footer {
-    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #00aec3;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
     position: fixed;
     bottom: 0;
-    text-align: center;
-    background-color: #00aec3;
-    width: 100%;
-    right: 0;
-    /* left: 0; */
-    font-size: 16px;
-}
-
-i {
-    padding-right: 16px;
 }
 
 .derechos {
     display: inline;
 }
 
-/* servicios */
 
+/* MEDIAS */
 
-/* avisos */
-
-/* contenedores gral */
-
-.contenedor_ventanas {
-    /* border: 2.5px solid green; */
-    width: 75%;
-    border: 1px solid black;
-    float: right;
-    margin: 5% 5%
-}
-
-.ventana {
-    /* border: 2.5px solid red; */
-    width: 50%;
-    margin: 5% 25%;
-    border: 1px solid black;
-}
-
-
-/* organigrama */
-
-.contenedor_organigrama {
-    text-align: center;
-}
-
-
-/* formulario */
-
-.form_contacto {
-    width: 30%;
-}
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-.bd-placeholder-img-lg {
-    font-size: 3.5rem;
-}
-}
-
-.b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+@media screen and (max-width: 767px) {
+    .nav {
+        font-size: 1.5rem;
+        align-items: center !important;
+        margin-bottom: 30px;
     }
-    
-    .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
+
+    .nav-item {
+        padding: 0px;
     }
-    
-    .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
+
+    .cuerpo-main {
+        box-shadow: none;
     }
-    
-    
-    .btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-    
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
+
+    footer {
+        font-size: 1rem;
     }
-    .bd-mode-toggle {
-    z-index: 1500;
+
+    .contact-form-container {
+        height: 100%;
     }
+
+    .contact-form {
+        width: 95%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 75%;
+    }
+
+    figure img {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 75vw;
+        /* height: 10%; */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+    }
+
+}
