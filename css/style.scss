@@ -3,6 +3,7 @@ $primary-color: #00aec3;
 $secondary-color: #9fc6c9;
 $background-color: #cae7ea;
 $font-family: 'Encode Sans', sans-serif;
+$font-weights: ("min": 400, "med": 600, "big": 800);
 
 /* Global styles */
 * {
@@ -29,6 +30,9 @@ header {
     padding-top: 30px;
     top: 0;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    h1 {
+      font-weight: map-get($font-weights, "big") ;
+    }
 }
 
 .nav {
