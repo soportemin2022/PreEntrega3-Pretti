@@ -1,0 +1,21 @@
+/* Grid thing */
+$grid-columns: 4;
+$grid-gap: 15px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(#{$grid-columns}, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: $grid-gap;
+    min-height: 500px;
+
+    .grid-item1 {
+        grid-column: 1 / -1;
+    }
+
+    .item {
+        font-size: 1.5rem;
+        border: 1px solid black;
+        padding: 15px;
+    }
+}
