@@ -11,9 +11,16 @@ $grid-gap: 15px;
 
     .grid-item1 {
         grid-column: 1 / -1;
+        font-size: 1.5rem;
+        border: 1px solid black;
     }
 
     .item {
+        font-size: 1.5rem;
+        border: 1px solid black;
+        padding: 15px;
+    }
+    .button{
         font-size: 1.5rem;
         border: 1px solid black;
         padding: 15px;
