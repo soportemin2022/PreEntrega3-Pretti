@@ -437,6 +437,9 @@ header img {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 50px;
   }
+  .accordion-header h2 {
+    font-size: 30px !important;
+  }
 }
 /* Organigrama */
 figure img {
