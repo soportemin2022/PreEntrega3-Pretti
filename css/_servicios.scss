@@ -1,16 +1,29 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    .reparacion{
-        background-color: darkolivegreen;
+    gap: 35px;
+
+    .reparacion {
+        // background-color: darkolivegreen;
     }
 }
-a{
-    text-decoration: none;
-}
+
 .grid-item {
     background-color: #e0e0e0;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 6px #000, 3px 3px 6px #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #000;
+    font-weight: bold !important;
+    font-size: 2rem;
+
+    &:hover {
+        /* Estilos al pasar el cursor sobre el botón */
+        transform: translateY(3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+    }
 }

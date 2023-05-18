@@ -1,3 +1,12 @@
-.imagen-ajustada{
-    width: 100%; /* Ancho deseado */
+// .imagen-ajustada{
+//     width: 100%; /* Ancho deseado */
+// }
+
+.carousel {
+    // height: 10%;
+    img {
+        width: 100% !important;
+        // height: 50% !important;
+    }
+    
 }

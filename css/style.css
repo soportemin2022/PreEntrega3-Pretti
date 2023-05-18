@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* IMPORTS */ /* Variables */ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -329,6 +330,10 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Grid thing */
 .grid-container {
   display: grid;
@@ -437,9 +442,6 @@ header img {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 50px;
   }
-  .accordion-header h2 {
-    font-size: 30px !important;
-  }
 }
 /* Organigrama */
 figure img {
@@ -448,27 +450,32 @@ figure img {
   background-color: transparent;
 }
 
-.imagen-ajustada {
-  width: 100%; /* Ancho deseado */
+.carousel img {
+  width: 100% !important;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 35px;
 }
-.grid-container .reparacion {
-  background-color: darkolivegreen;
-}
-
-a {
-  text-decoration: none;
-}
-
 .grid-item {
   background-color: #e0e0e0;
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 6px #000, 3px 3px 6px #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #000;
+  font-weight: bold !important;
+  font-size: 2rem;
+}
+.grid-item:hover {
+  /* Estilos al pasar el cursor sobre el botón */
+  transform: translateY(3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
 }
 
 footer {
