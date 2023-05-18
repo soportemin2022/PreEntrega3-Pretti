@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    .reparacion{
+        background-color: darkolivegreen;
+    }
+}
+a{
+    text-decoration: none;
+}
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
